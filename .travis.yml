@@ -28,7 +28,6 @@ install:
   # and fails if it is not present, so install it explicitly.
   - conda install flask
   # Install recipy.
-  - pip install -e . behave
   # Install py.test explicitly else Travis CI will use the one in its
   # virtualenv which can't use the Miniconda environment.
   - conda install pytest
