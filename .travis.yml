@@ -2,8 +2,6 @@ language: python
 
 python:
   - "2.7"
-#  - "3.3"
-  - "3.4"
 
 before_install:
   - if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
@@ -30,8 +28,6 @@ install:
   # and fails if it is not present, so install it explicitly.
   - conda install flask
   # Install recipy.
-  - python setup.py install
-  # Install behave for unit tests
   - pip install -e . behave
   # Install py.test explicitly else Travis CI will use the one in its
   # virtualenv which can't use the Miniconda environment.
