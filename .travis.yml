@@ -1,11 +1,6 @@
 language: python
 python:
   - "2.7"
-# command to install dependencies
-E: 
-cd E:\Automation Testing\Python\radon-2.4.0\radon-2.4.0\
-install:
-  - pip install -r requirements.txt
 # command to run tests
 script:
   - pytest
