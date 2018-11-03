@@ -7,3 +7,5 @@ python:
 script: 
 
   - python Solution.py
+  - python Solution_day3.py
+  - python Soultion_day2.py
